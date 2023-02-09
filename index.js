@@ -1,26 +1,25 @@
-// Code your solution in this file!
-function distanceFromHqInBlocks(p) {
+function distanceFromHqInBlocks(B) {
+  const h = 42;
+  const distance = Math.abs(B - h);
+  return distance;
+}
+distanceFromHqInBlocks(50);
+
+function distanceFromHqInFeet(y){
+  function distanceFromHqInBlocks(y){
     const h = 42;
-    const distance = Math.abs(p - h);
-    return distance;
-
+    const f = 264;
+    return(Math.abs((y-h)*f));
   }
-  distanceFromHqInBlocks(50);
-
-  function distanceFromHqInFeet(x){
-  function distanceFromHqInBlocks(x){
-      const h = 42;
-      const f = 264;
-    return (Math.abs((x-h)*f));
-  }
-  return distanceFromHqInBlocks(x);
-  }
+  return distanceFromHqInBlocks(y);
+}
 
 function distanceTravelledInFeet(start, destination){
-    const distance = Math.abs(((destination - start)*264));
+  const distance = Math.abs(((destination - start)*264));
   return distance;
 }
 distanceTravelledInFeet();
+
 
 function calculatesFarePrice(start, destination){
   const distance = Math.abs(((destination - start)*264));
@@ -33,3 +32,7 @@ else
   if(distance > 2500){return 'cannot travel that far'}
 }
 calculatesFarePrice();
+
+
+
+
